@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+
+  <body>
+    <main>
+      <form id="form" action="/" novalidate >
+        <div class="container flow">
+          <h1 class="title">Contact Us</h1>
+          <div class="separate separate-1">
+            <div class="separate__left">
+              <label for="first-name"
+                >First Name <span class="required">*</span></label
+              >
+              <input
+                class="input clr-input-border parent"
+                type="text"
+                id="first-name"
+                name="first-name"
+                
+              />
+            </div>
+            <div class="separate__right">
+              <label for="last-name"
+                >Last Name <span class="required">*</span>
+              </label>
+              <input
+                class="input clr-input-border parent "
+                type="text"
+                id="last-name"
+                name="last-name"
+              />
+            </div>
+          </div>
+          <!-- separate-->
+
+          <div class="straight parent">
+            <label for="email"
+              >Email Address <span class="required">*</span></label
+            >
+            <input
+              class="input clr-input-border"
+              type="email"
+              id="email"
+              name="email"
+            />
+          </div>
+
+          <div class="query-type parent">
+            <label for="query-type"
+              >Query Type <span class="required">*</span></label
+            >
+            <div class="separate">
+              <div class="radio">
+                  <input
+                    type="radio"
+                    id="general-enquiry"
+                    name="query-type"
+                    value="general-enquiry"
+                  />
+                <label class="full" for="general-enquiry">General Enquiry</label>
+              </div>
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="support-request"
+                  name="query-type"
+                  value="support-request"
+                />
+                <label class="full" for="support-request">Support Request</label>
+              </div>
+            </div>
+          </div>
+          <!-- separate for Quuery Type-->
+
+          <div class="straight parent test" >
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea class="input message"
+              type="textarea"
+              id="message"
+              name="message"
+              value="message"
+            /> </textarea>
+          </div>
+          <!--message-->
+
+          <div class="checkbox parent">
+            <input
+              type="checkbox"
+              id="checkbox"
+              name="checkbox"
+              value="checkbox"
+            /><label class="full" for="checkbox"
+              >I hereby consent to being contactedd by the team
+              <span class="required">*</span></label
+            >
+
+          </div>
+          <button class="btn-submit" type="submit">Submit</button>
+
+        </div>
+
+
+      </form>
+    </main>
+    <script defer src="script.js"></script>
+
+  </body>
+</html>
